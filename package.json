@@ -1,0 +1,14 @@
+{
+  "name": "clothingwebsite",
+  "version": "1.0.0",
+  "description": "creating my first clothing website",
+  "main": "index.js",
+  "scripts": {
+  "sass": "sass --watch scss:dist/css"
+  },
+  "author": "Mei Vadhanak",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.97.2"
+  }
+}
