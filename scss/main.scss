@@ -33,7 +33,7 @@ button:hover{
 .categories{
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 170px;
 }
 .category{
     padding: 0;
@@ -99,7 +99,7 @@ button:hover{
 .Gender{
     position: absolute;
     top: 65px;
-    left: 35px;
+    left: 100px;
     display: flex;
     gap: 25px;
 }
@@ -115,5 +115,31 @@ button:hover{
     text-decoration: underline;
     background: none;
     outline: none;
+}
+.gender-active{
+    text-decoration: underline;
+    border: none;
+    margin: 0;
+    background: none;
+    outline: none;
+    padding: 0;
+    font-size: 15px;
+}
+.gender-active:hover{
+    background: none;
+}
+.gender-acitive::after:hover{
+    text-decoration: none;
+}
+.click-img{
+    width: 700px;
+    height: auto;
+    margin: 0;
+    display: block;
+}
+.img-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 } 

@@ -33,7 +33,7 @@ body {
 .shop .categories {
   display: flex;
   justify-content: center;
-  gap: 150px;
+  gap: 170px;
 }
 .shop .category {
   padding: 0;
@@ -99,7 +99,7 @@ body {
 .shop .Gender {
   position: absolute;
   top: 65px;
-  left: 35px;
+  left: 100px;
   display: flex;
   gap: 25px;
 }
@@ -115,6 +115,32 @@ body {
   text-decoration: underline;
   background: none;
   outline: none;
+}
+.shop .gender-active {
+  text-decoration: underline;
+  border: none;
+  margin: 0;
+  background: none;
+  outline: none;
+  padding: 0;
+  font-size: 15px;
+}
+.shop .gender-active:hover {
+  background: none;
+}
+.shop .gender-acitive::after:hover {
+  text-decoration: none;
+}
+.shop .click-img {
+  width: 700px;
+  height: auto;
+  margin: 0;
+  display: block;
+}
+.shop .img-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
