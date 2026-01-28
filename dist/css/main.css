@@ -168,6 +168,8 @@ body {
   display: flex;
   left: 100px;
   top: 270px;
+  z-index: 100;
+  margin-bottom: 20px;
 }
 .shop .dailywearset {
   display: grid;
@@ -187,14 +189,17 @@ body {
   object-fit: cover;
   display: block;
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .shop .product-name {
   color: #000000;
   font-size: large;
   text-decoration: none;
   margin: 0;
-  margin-top: -40px;
+  margin-top: -25px;
+  display: block;
+  position: relative;
+  z-index: 1;
 }
 .shop .product-price {
   color: black;
@@ -202,9 +207,32 @@ body {
   text-decoration: none;
   margin: 0;
   margin-top: 2px;
+  display: block;
 }
 .shop .dailywearset a {
   text-decoration: none;
+  color: inherit;
+}
+.shop .wishlist-btn {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.shop .image-container {
+  position: relative;
+  margin-top: 20px;
+  overflow: visible;
+  z-index: 1;
+  gap: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
