@@ -248,7 +248,7 @@ button:hover{
 .quarterzipprice{
     position: absolute;
     top: 300px;
-    right: 365px;
+    right: 470px;
     font-size: 30px;
 }
 .product-color{
@@ -270,6 +270,73 @@ button:hover{
     width: 60px;
     height: 60px;
     background-color: #fff;
-
+    color:#000;
+    transition: all 0.3s ease;
+}
+.size:active{
+    background-color: #000;
+    color: #fff;
+}
+.size:focus{
+    background-color: #000;
+    color:#fff;
+}
+.adding-btn{
+    position: absolute;
+    top: 600px;
+    right: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.addto{
+    width: 220px;
+    height: 100px;
+    font-size: large;
+    background-color: #000000;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.addto:hover{
+    background-color:#fff;
+    color:#000;
+}
+.addto:active{
+    background-color: #fff;
+    color:#000;
+}
+.addto:focus{
+    background-color: #fff;
+    color:#000;
+}
+.addtowish{
+    width: 220px;
+    height: 100px;
+    font-size: large;
+    background-color:#fff;
+    color: #000;
+    transition: all 0.3s ease;
+}
+.addtowish:active{
+    background-color: #000;
+    color:#fff;
+}
+.addtowish:focus{
+    background-color: #000;
+    color: #fff;
+}
+.details{
+    position: absolute;
+    top: 730px;
+    right: 510px;
+    text-decoration: underline;
+    font-size: large;
+}
+.line{
+    position: absolute;
+    top: 770px;
+    right: 320px;
+    text-align: left;
+    line-height: 2;
 }
 } 

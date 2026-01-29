@@ -248,7 +248,7 @@ body {
 .shop .quarterzipprice {
   position: absolute;
   top: 300px;
-  right: 365px;
+  right: 470px;
   font-size: 30px;
 }
 .shop .product-color {
@@ -270,6 +270,74 @@ body {
   width: 60px;
   height: 60px;
   background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.shop .size:active {
+  background-color: #000;
+  color: #fff;
+}
+.shop .size:focus {
+  background-color: #000;
+  color: #fff;
+}
+.shop .adding-btn {
+  position: absolute;
+  top: 600px;
+  right: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.shop .addto {
+  width: 220px;
+  height: 100px;
+  font-size: large;
+  background-color: #000000;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.shop .addto:hover {
+  background-color: #fff;
+  color: #000;
+}
+.shop .addto:active {
+  background-color: #fff;
+  color: #000;
+}
+.shop .addto:focus {
+  background-color: #fff;
+  color: #000;
+}
+.shop .addtowish {
+  width: 220px;
+  height: 100px;
+  font-size: large;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.shop .addtowish:active {
+  background-color: #000;
+  color: #fff;
+}
+.shop .addtowish:focus {
+  background-color: #000;
+  color: #fff;
+}
+.shop .details {
+  position: absolute;
+  top: 730px;
+  right: 510px;
+  text-decoration: underline;
+  font-size: large;
+}
+.shop .line {
+  position: absolute;
+  top: 770px;
+  right: 320px;
+  text-align: left;
+  line-height: 2;
 }
 
 /*# sourceMappingURL=main.css.map */
