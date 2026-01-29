@@ -234,4 +234,42 @@ button:hover{
     z-index: 1;
     gap: 100px;
 }
+.fit-in{
+    position: absolute;
+    left: 100px;
+    top: 200px;
+}
+.quarterzipname{
+    position: absolute;
+    top: 250px;
+    right: 300px;
+    font-size: 30px;
+}
+.quarterzipprice{
+    position: absolute;
+    top: 300px;
+    right: 365px;
+    font-size: 30px;
+}
+.product-color{
+    position: absolute;
+    top: 400px;
+    right: 470px;
+    font-size: 15px;
+}
+.size-btn{
+    position: absolute;
+    top: 470px;
+    right: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 0 20px;
+}
+.size{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+
+}
 } 

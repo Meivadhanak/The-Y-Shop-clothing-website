@@ -234,5 +234,42 @@ body {
   z-index: 1;
   gap: 100px;
 }
+.shop .fit-in {
+  position: absolute;
+  left: 100px;
+  top: 200px;
+}
+.shop .quarterzipname {
+  position: absolute;
+  top: 250px;
+  right: 300px;
+  font-size: 30px;
+}
+.shop .quarterzipprice {
+  position: absolute;
+  top: 300px;
+  right: 365px;
+  font-size: 30px;
+}
+.shop .product-color {
+  position: absolute;
+  top: 400px;
+  right: 470px;
+  font-size: 15px;
+}
+.shop .size-btn {
+  position: absolute;
+  top: 470px;
+  right: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 0 20px;
+}
+.shop .size {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+}
 
 /*# sourceMappingURL=main.css.map */
