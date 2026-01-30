@@ -90,6 +90,7 @@ button:hover{
     border-radius: 8px;
     border: none;
     background: none;
+    color:#000;
 }
 .wishlistbag:hover{
     text-decoration: underline;
@@ -372,4 +373,18 @@ button:hover{
 .close-btn:hover{
     background: darkred;
 }
-} 
+.shoppingbag{
+    position: absolute;
+    left: 100px;
+    top: 180px;
+    font-size: 30px;
+}
+.mybagquarterzip{
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    left: 100px;
+    top: 300px;
+}
+}
