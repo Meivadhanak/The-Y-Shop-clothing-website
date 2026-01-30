@@ -46,7 +46,11 @@
             <button class="size">XXL</button>
             </div>
             <div class="adding-btn">
-                <button class="addto"> Add To Cart</button>
+                <button class="addto"> Add To Bag</button>
+                <div class="popup-img" style="display: none;">
+                <button class="close-btn">&times;</button>
+                <img src="images/addtobagimg.png" alt="Cart">
+                </div>
                 <button class="addtowish"><span>♡</span> Add To Wishlist</button>
             </div>
             <p class="details">Details</p>
@@ -58,5 +62,15 @@
                 <br>• Our Style No. AGOF-MK4
                 <br>• Manufacturer Style No. A1027-1784</p>
     </header>
+    <script>
+    document.querySelector('.addto').onclick = () => {
+        document.querySelector('.popup-img').style.display = 'block';
+    };
+    document.querySelector('.close-btn').onclick = (e) => {
+        e.stopPropagation();
+        document.querySelector('.popup-img').style.display = 'none';
+    };
+    </script>
+
 </body>
 </html>
