@@ -31,6 +31,19 @@
          <p class="quantity">Quantity 1</p>
          <p class="color">Color: Black</p>
          <button class="delete">Delete</button>
+         <div class="popup-img" style="display: none;">
+            <button class="close-btn">&times;</button>
+            <p>Item has been removed</p>
+         </div>
         </header>
+    <script>
+    document.querySelector('.delete').onclick = () => {
+        document.querySelector('.popup-img').style.display = 'block';
+    };
+    document.querySelector('.close-btn').onclick = (e) => {
+        e.stopPropagation();
+        document.querySelector('.popup-img').style.display = 'none';
+    };
+    </script>
 </body>
 </html>
