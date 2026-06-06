@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wish List</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+        <header class="shop">
+        <h1>The Y Shop</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="Search-input">
+            <button class="search-button">Search</button>
+        </div>
+        <div class="list">
+            <a href="wishlist.html" class="wishlistbag">Wish List</a>
+            <a href="mybag.html" class="wishlistbag">My Bag</a>
+        </div>
+        <div class="Gender">
+        <a href="men.html">
+        <button class="gender-active">Mens</button></a>
+        <a href="women.html">
+        <button class="gender">Womens</button></a>
+        </div>
+        <p>Modern fashion for everyone</p>
+        <p class="shoppingbag">Your Wish List</p>
+        <img src="images/quarterzip.jpg" class="mybagquarterzip">
+         <p class="mybag">Oversized Quarterzip</p>
+         <p class="mybagprice">45.50$</p>
+         <p class="quantity">Quantity 1</p>
+         <p class="color">Color: Black</p>
+         <button class="delete">Delete</button>
+         <div class="popup-img" style="display: none;">
+            <button class="close-btn">&times;</button>
+            <p>Item has been removed</p>
+         </div>
+        </header>
+        <script>
+    document.querySelector('.delete').onclick = () => {
+        document.querySelector('.popup-img').style.display = 'block';
+    };
+    document.querySelector('.close-btn').onclick = (e) => {
+        e.stopPropagation();
+        document.querySelector('.popup-img').style.display = 'none';
+    };
+    </script>
+</body>
+</html>
