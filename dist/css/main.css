@@ -27,6 +27,13 @@ body {
   color: #000000;
   line-height: 2rem;
 }
+.shop .modern-tagline {
+  margin: 0 0 20px;
+  color: #111111;
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
 .shop button:hover {
   background: #333;
 }
