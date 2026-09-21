@@ -189,6 +189,11 @@ body {
   object-fit: auto;
   padding: 0 100px;
 }
+.shop .search-empty {
+  margin: 32px 0;
+  color: #555;
+  font-size: 14px;
+}
 @media (max-width: 900px) {
   .shop .shop h1 {
     margin-top: 34px;

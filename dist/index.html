@@ -10,11 +10,11 @@
         <header class="shop">
         <p class="shop-announcement">Complimentary shipping on orders over $100</p>
         <h1>The Y Shop</h1>
-        <div class="search-container">
+        <form class="search-container" id="collection-search">
             <label class="visually-hidden" for="site-search">Search the shop</label>
             <input id="site-search" type="search" placeholder="Search..." class="Search-input">
-            <button class="search-button">Search</button>
-        </div>
+            <button class="search-button" type="submit">Search</button>
+        </form>
         <div class="list">
             <a href="wishlist.html" class="wishlistbag">Wish List</a>
             <a href="mybag.html" class="wishlistbag">My Bag</a>
@@ -36,17 +36,38 @@
             <button class="category">Accessories</button>
         </div>
         <div class="img-wrapper">
-        <a href="dailywear.html">
+        <a href="dailywear.html" data-collection="daily wear clothes">
             <img src="images/Dailywear.png" class="click-img" alt="Daily menswear collection"></a>
-        <a href="thenightout.html">
+        <a href="thenightout.html" data-collection="night out evening looks">
             <img src="images/thenightout.png" class="click-img" alt="Evening looks collection"></a>
-        <a href="beachday.html">
+        <a href="beachday.html" data-collection="beach day summer">
             <img src="images/beachday.png" class="click-img" alt="Beach day collection"></a>
-        <a href="StreetStyle.html">
+        <a href="StreetStyle.html" data-collection="street style urban">
             <img src="images/StreetStyle.png" class="click-img" alt="Street style collection"></a>
-        <a href="SpecialFit.html">
+        <a href="SpecialFit.html" data-collection="special fit tailored">
             <img src="images/SpecialFit.png" class="click-img" alt="Special fit collection"></a>
         </div>
+        <p class="search-empty" id="search-empty" hidden>No collections match that search.</p>
     </header>
+    <script>
+        const searchForm = document.querySelector('#collection-search');
+        const searchInput = document.querySelector('#site-search');
+        const collections = [...document.querySelectorAll('[data-collection]')];
+        const emptyMessage = document.querySelector('#search-empty');
+
+        searchForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const query = searchInput.value.trim().toLowerCase();
+            let visibleCollections = 0;
+
+            collections.forEach((collection) => {
+                const matches = !query || collection.dataset.collection.includes(query);
+                collection.hidden = !matches;
+                visibleCollections += matches ? 1 : 0;
+            });
+
+            emptyMessage.hidden = visibleCollections > 0;
+        });
+    </script>
 </body>
 </html>

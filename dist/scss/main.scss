@@ -189,6 +189,11 @@ button:hover{
     object-fit: auto;
     padding: 0 100px;
 }
+.search-empty {
+    margin: 32px 0;
+    color: #555;
+    font-size: 14px;
+}
 
 @media (max-width: 900px) {
     .shop h1 {
