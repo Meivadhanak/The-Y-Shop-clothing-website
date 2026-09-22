@@ -91,20 +91,29 @@ body {
   gap: 5px;
 }
 .shop .Search-input {
-  padding: 2px 6px;
-  font-size: -10rem;
+  padding: 10px 12px;
+  font-size: 15px;
+  min-width: 220px;
   border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
 }
+.shop .Search-input:focus-visible {
+  border-color: #111;
+  box-shadow: 0 0 0 3px rgba(17, 17, 17, 0.15);
+}
 .shop .search-button {
-  padding: 1px 2px;
-  font-size: -40rem;
+  padding: 10px 18px;
+  font-size: 14px;
   background-color: black;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+.shop .search-button:hover,
+.shop .search-button:focus-visible {
+  background-color: #333;
 }
 .shop .list {
   position: absolute;
