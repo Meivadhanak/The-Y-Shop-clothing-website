@@ -56,8 +56,7 @@
         const collections = [...document.querySelectorAll('[data-collection]')];
         const emptyMessage = document.querySelector('#search-empty');
 
-        searchForm.addEventListener('submit', (event) => {
-            event.preventDefault();
+        const filterCollections = () => {
             const query = searchInput.value.trim().toLowerCase();
             let visibleCollections = 0;
 
@@ -68,6 +67,12 @@
             });
 
             emptyMessage.hidden = visibleCollections > 0;
+        };
+
+        searchInput.addEventListener('input', filterCollections);
+        searchForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            filterCollections();
         });
     </script>
 </body>
