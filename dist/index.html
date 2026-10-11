@@ -57,11 +57,11 @@
         const emptyMessage = document.querySelector('#search-empty');
 
         const filterCollections = () => {
-            const query = searchInput.value.trim().toLowerCase();
+            const terms = searchInput.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
             let visibleCollections = 0;
 
             collections.forEach((collection) => {
-                const matches = !query || collection.dataset.collection.includes(query);
+                const matches = terms.every((term) => collection.dataset.collection.includes(term));
                 collection.hidden = !matches;
                 visibleCollections += matches ? 1 : 0;
             });
